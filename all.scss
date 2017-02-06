@@ -292,6 +292,18 @@ background: url('images/checked.png') no-repeat center center;
 		font-size: 21px;
 		padding: 20px 0;
 	}
+		&_systems{
+			float: left;
+			width: 26%;
+		}
+		&_item{
+			display: inline-block;
+			width: 15%;
+	    margin-right: 1%;
+	    img{
+	    	height: 20px;
+	    }
+		}
 }
 .partners {
 	padding: 0.5em 0;
