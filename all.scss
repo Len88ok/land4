@@ -272,7 +272,8 @@ background: url('images/checked.png') no-repeat center center;
 @media screen and (max-width: 480px ) {
 	.form {
 		&_main{
-		  width: 80%;
+		  width: 75%;
+		  margin: 0 auto;
 		  float: none;		  
 		}
 		&_caption{
