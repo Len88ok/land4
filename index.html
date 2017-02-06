@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Redmax</title>
 	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">	
 </head>
 <body>	
 <canvas id="pixie"></canvas>
@@ -57,7 +58,12 @@
 							</div>								
 						</div>								
 					</div>								
-					<div class="security_text">Компания Ред-Макс отвечает за качество и просит остерегаться пиратских подделок. </div>
+					<div class="owl-carousel security_text">
+						<div class="item">RedMax - единственная лицензионная израильская компания для русско - язычных граждан.</div>
+						<div class="item">Компания Ред-Макс отвечает за качество и просит остерегаться пиратских подделок.</div>
+						<div class="item">Научные,детские,фильмы, спорт,еда и многое другое только у нас.</div>
+						<div class="item">Более 200 каналов на руском языке.</div>
+		 			</div>
 					<div class="content">
 						<div class="partners clearfix">
 							<ul class="partners_list">
@@ -80,9 +86,34 @@
 					</div>
 				</div>	
 			</main>			
-			<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+			<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+			<script src="owl-carousel/owl.carousel.min.js"></script>
+			<script>
+			  $(document).ready(function() {
+			    var owl = $('.owl-carousel');
+			    owl.owlCarousel({
+			      items: 1,
+			      loop: true,
+			      center: true,
+			      dots: false,
+			      margin: 10,
+			      autoplay: true,
+			      autoplayTimeout: 1000,
+			      autoplayHoverPause: true
+			    });
+			    $('.play').on('click', function() {
+			      owl.trigger('play.owl.autoplay', [1000])
+			    })
+			    $('.stop').on('click', function() {
+			      owl.trigger('stop.owl.autoplay')
+			    })
+			  })
+			</script>
 		  <script src="js/parallaxsoon5.js" type="text/javascript"></script>
-			<script src="js/main.js"></script>
-			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+			<script src="js/main.js"></script>	
+			
 		</body>
 		</html>
